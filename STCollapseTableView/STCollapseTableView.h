@@ -48,6 +48,8 @@
  */
 @interface STCollapseTableView : UITableView
 
+@property (nonatomic, weak) id<STCollapseTableViewDelegate> headerViewTapDelegate;
+
 /**
  *	This property allow to enable/disable the exclusivity.
  *  If YES, only one section is allowed to be open.
@@ -95,7 +97,5 @@
  *	@return	YES if the section is open.
  */
 - (BOOL)isOpenSection:(NSUInteger)sectionIndex;
-
-@property (nonatomic, weak) id<STCollapseTableViewDelegate> headerViewTapDelegate;
 
 @end
