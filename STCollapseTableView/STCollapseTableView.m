@@ -324,7 +324,7 @@
     {
         if([self.headerViewTapDelegate respondsToSelector:@selector(STCollapseTableView:didSelectHeaderViewAtSection:)])
         {
-            [self.headerViewTapDelegate STCollapseTableView:self didSelectHeaderViewAtSection:index];
+            [self.headerViewTapDelegate collapseTableView:self didSelectHeaderViewAtSection:index];
         }
         
         [self toggleSection:(NSUInteger)index animated:YES];
