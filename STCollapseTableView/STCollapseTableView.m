@@ -322,7 +322,7 @@
     NSInteger index = tap.view.tag;
     if (index >= 0)
     {
-        if([self.headerViewTapDelegate respondsToSelector:@selector(STCollapseTableView:didSelectHeaderViewAtSection:)])
+        if([self.headerViewTapDelegate respondsToSelector:@selector(collapseTableView:didSelectHeaderViewAtSection:)])
         {
             [self.headerViewTapDelegate collapseTableView:self didSelectHeaderViewAtSection:index];
         }
